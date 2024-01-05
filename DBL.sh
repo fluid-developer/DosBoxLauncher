@@ -1,6 +1,14 @@
 #!/bin/bash
 #Functions
-
+db() {
+    x11=$(<~/.DBLF/termux.mode)
+    if [[ true = $x11 ]]
+    then
+    termux-x11 :1 -xstartup "dosbox ${@}"
+    else
+    dosbox $@
+    fi
+}
 #Launcher
 echo "setting up envovirment..."
 path=$(<~/.DBLF/path.txt)
@@ -28,7 +36,7 @@ echo "(no games will be mounted automatically)"
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
     bash logo.sh clear
-    dosbox
+    db
     clear
     echo "goodbye, $USER"
 else
@@ -85,7 +93,7 @@ else
         path=$(<~/.DBLF/path.txt)
         bash logo.sh clear
         echo "${path}/${REPLY}"
-        dosbox $path/$REPLY
+        db $path/$REPLY
         clear
         echo "goodbye, $USER"
         echo "path: ${path}/${REPLY}"

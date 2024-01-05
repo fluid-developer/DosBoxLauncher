@@ -31,7 +31,15 @@ then
         touch /home/$USER/.DBLF/path.txt
         echo "${REPLY}" > /home/$USER/.DBLF/path.txt
     fi
-        PC=true
+    touch /home/$USER/.DBLF/termux.mode
+    echo "Are you on termux?"
+    read -p "" -n 1 -r
+        if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+    echo "true" > /home/$USER/.DBLF/termux.mode
+    else
+    echo "false" > /home/$USER/.DBLF/termux.mode
+    fi
     echo "Want launch DBL right now?"
     read -p "" -n 1 -r
         if [[ $REPLY =~ ^[Yy]$ ]]
