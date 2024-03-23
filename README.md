@@ -1,12 +1,8 @@
 # DB Launcher - Simple and clean DosBox Launcher
-DosBox Launcher is random project which aims to make dosbox game launching proccess easier
+DosBox Launcher is random project which aims to make dosbox game launching proccess easier<br>
 
 # Installation
-hop on Releases page and download 'DBLI.sh' file (logo.sh is optional, and cosmetic), run it
-
-press 'y' to install.
-
-press 'y' and choose any path you want to install (if not in ~, you shall execute script as root)
-
-you can press 'y' again to launch it immedately
-
+Note that v2.0  isn't really done, and meant to fix some bugs<br>
+# Broken features
+termux support (cant add the "s to mention the command.)<br>
+config file is broken (you can edit Launcher.sh and db files, only they have the configs in the first version of v2.0)
