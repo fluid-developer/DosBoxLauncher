@@ -1,0 +1,3 @@
+echo "Config loaded."
+KIPHELLO="false"
+TERMUX="true"
