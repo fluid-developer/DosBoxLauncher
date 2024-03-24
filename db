@@ -1,12 +1,11 @@
-# bash config NOT WORKING! TEST FEATURE!
+TERMUX=false
 
-TERMUX=true
 if [[ $TERMUX == "true" ]]
 then
-  echo "termux-x11 :1 -xstartup ""dosbox ${1}"""
+  termux-x11 :1 -xstartup "dosbox $1"
 fi
 
 if [[ $TERMUX == "false" ]]
 then
-  echo dosbox $1
+  dosbox $1
 fi

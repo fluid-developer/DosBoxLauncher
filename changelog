@@ -1,0 +1,26 @@
+DosBoxLauncher v2.1 by Fluid (a.k.a. @fluidoff / @true1fluid / fluid-developer)
+
+CHANGELOG
+
+v1.0
+	Initial release
+
+v1.2
+	Bug fixes
+
+v1.3
+	Termux + Termux x11 support
+
+-- NEW ERA --
+
+v2.0
+	Initial release with full rewrite
+
+v2.1 (Current)
+	Bug fixes 
+	Improvements
+	Changelog file
+	Fixed Issue #2 (Termux couldn't directories)
+
+v2.2 (Upcoming / Planned)
+	Config file introduction
